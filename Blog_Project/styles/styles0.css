@@ -1,0 +1,166 @@
+.navbar{
+    background-color: rgb(123, 202, 255);
+}
+
+.rightList {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.rightList> li {
+    float: left;
+}
+.contactList{
+    width: 50px;
+}
+
+.listLeft {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.listLeft > li{
+    float: right;
+    
+}
+
+li a {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: teal;
+}
+
+img {
+    padding-top: 5px;
+    padding-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.cards {
+    background-color: rgb(165, 216, 250);
+    display: grid;
+    height: 700px;
+    grid-template-columns: 5% 42.5% 5% 42.5% 5%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    "t1 t2 t3 t4"
+    "m1 m2 m3 m4"
+    "b1 b2 b3 b4";
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   
+    margin: 0 auto;
+    
+  }
+
+  .card1 {
+      grid-area: m2;
+      box-shadow: 0px 6px 12px 0 blue;
+      text-align: center;
+  }
+  .card1:hover {
+      box-shadow: 0px 25px 30px yellow;
+  }
+figure > img {
+     height: 70%;
+  }
+  button:hover{
+      background-color: yellow;
+      
+  }
+
+  .card2 {
+      grid-area: m4;
+      box-shadow: 0px 6px 12px 0 blue;
+      text-align: center;
+  }
+
+  /* Mobile view*/
+  @media(min-width:100px) and (max-width:480px){
+  .cards{
+    background-color: rgb(165, 216, 250);
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas:
+    "t1 t2 "
+    "m2 m2"
+    "m4 m4";
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   
+    margin: 0 auto;
+  }
+
+  .card1{
+      height: 200px;
+      margin-bottom: 20px;
+  }
+  .card2{
+      height: 200px;
+      margin-top: 20px;
+  }
+} 
+
+ /* Laptop view*/
+ @media(min-width:1024px) {
+ .cards{
+    background-color: rgb(165, 216, 250);
+    display: grid;
+    height: 700px;
+    grid-template-columns: 5% 42.5% 5% 42.5% 5%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    "t1 t2 t3 t4"
+    "m1 m2 m3 m4"
+    "b1 b2 b3 b4";
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   
+    margin: 0 auto;
+ }
+} 
+
+/* Tablet view*/
+@media(min-width:768px) and (max-width:1023px){
+    .cards{
+       background-color: rgb(165, 216, 250);
+       display: grid;
+       height: 700px;
+       grid-template-columns: 5% 42.5% 5% 42.5% 5%;
+       grid-template-rows: 10% 80% 10%;
+       grid-template-areas:
+       "t1 t2 t3 t4"
+       "m1 m2 m3 m4"
+       "b1 b2 b3 b4";
+       
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       transition: 0.3s;
+      
+       margin: 0 auto;
+    }
+    .card1{
+        height: 600px;
+    }
+    .card2{
+        height: 600px;
+    }
+   } 
